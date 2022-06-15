@@ -24,7 +24,7 @@ pipeline {
               }
           }
           steps {
-              sh 'docker build https://github.com/GitPullFranken/chapter10.git -t chapter10:latest'
+              sh 'docker build https://github.com/GitPullFranken/chapter10.git#main -t chapter10:latest'
           }
       }        
       stage('Deploy') {
